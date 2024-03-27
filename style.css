@@ -19,7 +19,8 @@ header {
     align-items: center;
     justify-content: right;
 }
-.about-container{
+
+.about-container {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -32,10 +33,12 @@ nav ul {
     padding: 0;
     display: flex;
 }
-.product-image{
+
+.product-image {
     width: 150px;
 }
-.product-item{
+
+.product-item {
     padding-top: 12px;
     display: flex;
     width: 10%;
@@ -44,11 +47,13 @@ nav ul {
     border-radius: 9px;
     box-shadow: 0px 8px 22px #B3B1B1;
 }
-.about-section{
+
+.about-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 nav ul li a {
     margin: 10px;
     padding: 0;
@@ -56,19 +61,20 @@ nav ul li a {
     text-decoration: none;
 }
 
-main{
+main {
     padding: 24px 80px;
 }
 
-.product-link{
+.product-link {
+    width: 100%;
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
@@ -82,11 +88,8 @@ a{
     align-items: center;
     background-image: url('wineBanner.jpg');
     background-size: cover;
-    /* Adjusts the size of the background image to cover the entire container */
     background-position: center;
-    /* Centers the background image */
     background-repeat: no-repeat;
-    /* Prevents the background image from repeating */
 }
 
 #banner h1 {
@@ -112,70 +115,65 @@ footer {
     justify-content: center;
 }
 
-h2{
+h2 {
     color: #8B0000;
 }
 
-.blog-container{
+.blog-container {
     width: 920px;
     margin: 0px auto;
 }
 
-.mainPosts{
+.mainPosts {
     width: 700px;
     float: left;
 }
 
-.lateral-bar{
+.lateral-bar {
     width: 200px;
     float: right;
 }
 
-.titlePost{
+.titlePost {
     font-size: 2em;
     display: block;
     margin-bottom: 0px;
     color: #8B0000;
 }
 
-.post{
-    padding-left: 30px;
-    padding-bottom: 15px;
+.post {
+    padding: 50px 24px;
     background-color: #fff;
     margin-top: -32px;
     margin-bottom: 10px;
 }
 
-.data-post{
-        font-size: 0.8em;
-        display: block;
-        margin-bottom: 20px;
+.data-post {
+    font-size: 0.8em;
+    display: block;
+    margin-bottom: 20px;
 }
 
-.post p, a {
-    margin-left: 10px;
-    margin-right: 100px;
-    text-align: justify;
-}
 
-.post a{
+
+.post a {
     font-weight: bold;
     color: #8B0000;
 }
 
 
-.conteudo-lateral{
+.conteudo-lateral {
     width: 180px;
     background-color: #fff;
     padding: 1px 10px 10px 10px;
 }
 
-.conteudo-lateral h3{
+.conteudo-lateral h3 {
     background-color: #8B0000;
     color: #fff;
     padding: 5px
 }
 
-.postDestaque{
+.postDestaque {
     background-color: #8B0000;
 }
