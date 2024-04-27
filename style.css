@@ -177,3 +177,34 @@ h2 {
 .postDestaque {
     background-color: #8B0000;
 }
+
+.product-page-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    gap: 50px
+    ;
+}
+.product-page-coloum{
+    display: flex;
+    height: 100%;
+
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.product-page-image{
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+}
+
+#product-page-coloumInfo{
+    justify-content: flex-start;
+    flex-direction: column;
+}

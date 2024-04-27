@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product-page-section">
+        <div class="product-page-coloum">
+            <img src="winne.png" alt="wine bottle" class="product-page-image">
+
+        </div>
+        <div id="product-page-coloumInfo" class="product-page-coloum">
+            <h1>vinho chileno</h1>
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusamus eaque et consequuntur sint
+                autem veniam, maxime tempora neque laboriosam. Ipsum recusandae voluptatum voluptatibus rerum aliquid!
+                Hic officia similique eum.
+            </h3>
+            <select id="numberSelect" onchange="getValue()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <p>
+                R$<span id="dynamically-price"></span>
+            </p>
+
+            <button onclick="Comprar()">
+                Comprar
+            </button>
+        </div>
+    </section>
+    <section>
+        <div class="comments">
+            <h3>Customer Comments</h3>
+            <ul class="comment-list">
+                <!-- Comments will be dynamically added here -->
+            </ul>
+            <form id="comment-form">
+                <input type="text" id="comment-input" placeholder="Add your comment...">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Winear. All rights reserved..</p>
+    </footer>
+    <script>
+        function Comprar() {
+            alert('Produto adicionado  ao carrinho com sucesso!')
+        }
+
+        const productValue = 22.00
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentForm = document.getElementById('comment-form');
+            const commentInput = document.getElementById('comment-input');
+            const commentList = document.querySelector('.comment-list');
+
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const commentText = commentInput.value.trim();
+                if (commentText !== '') {
+                    const newComment = document.createElement('li');
+                    newComment.textContent = commentText;
+                    commentList.appendChild(newComment);
+                    commentInput.value = '';
+                }
+            });
+            const span = document.querySelector('#dynamically-price').textContent = productValue
+
+
+        });
+
+        function getValue() {
+            var selectElement = document.getElementById("numberSelect");
+            var selectedValue = selectElement.value;
+            const multiplicatedPrice = productValue * selectedValue;
+            const span = document.querySelector('#dynamically-price').textContent = multiplicatedPrice
+
+        }
+
+    </script>
+</body>
+
+</html>
