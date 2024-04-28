@@ -49,6 +49,11 @@
                 R$<span id="dynamically-price"></span>
             </p>
 
+            <label for="cupomUser" class="product-page-coloum__label-cupom">Cupom de desconto</label> 
+            <input type="text" id="cupomUser" placeholder="CUPOM123">
+            <button onclick="applyCupom()" id="botaoCupom">Aplicar</button>
+            <span id="statusCupom"></span>
+
             <button onclick="Comprar()">
                 Comprar
             </button>
@@ -70,11 +75,45 @@
         <p>&copy; 2024 Winear. All rights reserved..</p>
     </footer>
     <script>
+
         function Comprar() {
             alert('Produto adicionado  ao carrinho com sucesso!')
-        }
+            }
 
         const productValue = 22.00
+
+        document.querySelector('#dynamically-price').textContent = productValue
+
+        function getValue() {
+            var selectElement = document.getElementById("numberSelect");
+            var selectedValue = selectElement.value;
+            const multiplicatedPrice = productValue * selectedValue;
+            document.querySelector('#dynamically-price').textContent = multiplicatedPrice
+        }
+
+        function applyCupom(){
+
+            var cupom = document.querySelector('#cupomUser').value;
+            if(!this.disabled){
+                    if (cupom === 'FIAP2024'){
+                        var preco = parseInt(document.getElementById('dynamically-price').textContent);
+                        var preco = preco - (preco/100 * 10);
+                        document.getElementById('dynamically-price').textContent = preco
+                        document.getElementById('statusCupom').textContent = 'Cupom Aplicado!';
+                        var status = document.getElementById('statusCupom');
+                        status.style.color = "green"
+                        this.disabled = true
+                        }
+                    else{
+                    document.getElementById('statusCupom').textContent = 'Cupom Inválido!'
+                    var status = document.getElementById('statusCupom');
+                    status.style.color = "red"
+                    }
+            }
+            else{
+                document.getElementById('statusCupom').textContent = 'Cupom já aplicado!'
+            }
+        }
 
         document.addEventListener('DOMContentLoaded', function () {
             const commentForm = document.getElementById('comment-form');
@@ -91,18 +130,7 @@
                     commentInput.value = '';
                 }
             });
-            const span = document.querySelector('#dynamically-price').textContent = productValue
-
-
         });
-
-        function getValue() {
-            var selectElement = document.getElementById("numberSelect");
-            var selectedValue = selectElement.value;
-            const multiplicatedPrice = productValue * selectedValue;
-            const span = document.querySelector('#dynamically-price').textContent = multiplicatedPrice
-
-        }
 
     </script>
 </body>
