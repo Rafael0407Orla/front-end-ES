@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
     <header>
         <nav>
@@ -24,7 +21,6 @@
     <section class="product-page-section">
         <div class="product-page-coloum">
             <img src="winne.png" alt="wine bottle" class="product-page-image">
-
         </div>
         <div id="product-page-coloumInfo" class="product-page-coloum">
             <h1>vinho chileno</h1>
@@ -34,6 +30,7 @@
                 Hic officia similique eum.
             </h3>
             <select id="numberSelect" onchange="getValue()">
+                <option value="0"></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -48,15 +45,11 @@
             <p>
                 R$<span id="dynamically-price"></span>
             </p>
-
             <label for="cupomUser" class="product-page-coloum__label-cupom">Cupom de desconto</label> 
             <input type="text" id="cupomUser" placeholder="CUPOM123">
             <button onclick="applyCupom()" id="botaoCupom">Aplicar</button>
             <span id="statusCupom"></span>
-
-            <button onclick="Comprar()">
-                Comprar
-            </button>
+            <button onclick="comprar()">Comprar</button>
         </div>
     </section>
     <section>
@@ -74,65 +67,6 @@
     <footer>
         <p>&copy; 2024 Winear. All rights reserved..</p>
     </footer>
-    <script>
-
-        function Comprar() {
-            alert('Produto adicionado  ao carrinho com sucesso!')
-            }
-
-        const productValue = 22.00
-
-        document.querySelector('#dynamically-price').textContent = productValue
-
-        function getValue() {
-            var selectElement = document.getElementById("numberSelect");
-            var selectedValue = selectElement.value;
-            const multiplicatedPrice = productValue * selectedValue;
-            document.querySelector('#dynamically-price').textContent = multiplicatedPrice
-        }
-
-        function applyCupom(){
-
-            var cupom = document.querySelector('#cupomUser').value;
-            if(!this.disabled){
-                    if (cupom === 'FIAP2024'){
-                        var preco = parseInt(document.getElementById('dynamically-price').textContent);
-                        var preco = preco - (preco/100 * 10);
-                        document.getElementById('dynamically-price').textContent = preco
-                        document.getElementById('statusCupom').textContent = 'Cupom Aplicado!';
-                        var status = document.getElementById('statusCupom');
-                        status.style.color = "green"
-                        this.disabled = true
-                        }
-                    else{
-                    document.getElementById('statusCupom').textContent = 'Cupom Inválido!'
-                    var status = document.getElementById('statusCupom');
-                    status.style.color = "red"
-                    }
-            }
-            else{
-                document.getElementById('statusCupom').textContent = 'Cupom já aplicado!'
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const commentForm = document.getElementById('comment-form');
-            const commentInput = document.getElementById('comment-input');
-            const commentList = document.querySelector('.comment-list');
-
-            commentForm.addEventListener('submit', function (event) {
-                event.preventDefault();
-                const commentText = commentInput.value.trim();
-                if (commentText !== '') {
-                    const newComment = document.createElement('li');
-                    newComment.textContent = commentText;
-                    commentList.appendChild(newComment);
-                    commentInput.value = '';
-                }
-            });
-        });
-
-    </script>
+    <script src="srciptProductPage.js"> </script>
 </body>
-
 </html>
