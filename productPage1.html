@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -30,7 +32,6 @@
                 Hic officia similique eum.
             </h3>
             <select id="numberSelect" onchange="getValue()">
-                <option value="0"></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -43,9 +44,9 @@
                 <option value="10">10</option>
             </select>
             <p>
-                R$<span id="dynamically-price"></span>
+                R$<span id="dynamically-price">22</span>
             </p>
-            <label for="cupomUser" class="product-page-coloum__label-cupom">Cupom de desconto</label> 
+            <label for="cupomUser" class="product-page-coloum__label-cupom">Cupom de desconto</label>
             <input type="text" id="cupomUser" placeholder="CUPOM123">
             <button onclick="applyCupom()" id="botaoCupom">Aplicar</button>
             <span id="statusCupom"></span>
@@ -69,4 +70,5 @@
     </footer>
     <script src="srciptProductPage.js"> </script>
 </body>
+
 </html>

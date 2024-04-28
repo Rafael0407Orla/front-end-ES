@@ -3,7 +3,7 @@ var productValue = 22.00
 function comprar() {
     alert('Produto adicionado  ao carrinho com sucesso!');
     document.getElementById('cupomUser').value = '';
-    document.getElementById('numberSelect').value = '0';
+    document.getElementById('numberSelect').value = '1';
     getValue()
 }
 
@@ -39,7 +39,8 @@ function applyCupom() {
     }
     else {
         status.textContent = 'Cupom já aplicado!'
-    }}
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     const commentForm = document.getElementById('comment-form');
