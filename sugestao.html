@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestão de Receitas</title>
+    <link rel="stylesheet" href="sugestao.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="sugestao.html">Receitas</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="text-principal" class="flex row">
+        <h1>HARMONIZE<br>SEUS<br>SABORES<br>COM<br>
+            <div class="wine">
+                <span class="wine-letter">V</span>
+                <span class="wine-letter">I</span>
+                <span class="wine-letter">N</span>
+                <span class="wine-letter">H</span>
+                <span class="wine-letter">O</span>
+                .
+            </div>
+        </h1>
+    </div>
+
+    <div id="part1" class="flex row">
+        <div class="part1-info flex column">
+            <h2>Veja as receitas que mais combinam. Faça do seu jeito!</h2>
+            
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <div class="dropdown-select">
+                    <span class="select">Selecione o tipo de vinho</span>
+                </div>
+                <ul class="dropdown-list">
+                    <li class="dropdown-list_item">Vinho Tinto</li>
+                    <li class="dropdown-list_item">Vinho Branco</li>
+                    <li class="dropdown-list_item">Vinho Seco</li>
+                    <li class="dropdown-list_item">Espumante</li>
+                    <li class="dropdown-list_item">Vinho Rosé</li>
+                </ul>
+            </div>
+
+            <button id="botao">Clique aqui para ver a receita</button>
+            <div id="texto"></div>
+        </div>
+    </div>
+
+    <script src="sugestao.js"></script>
+</body>
+</html>

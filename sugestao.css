@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 239, 228);
+}
+
+header {
+    display: flex;
+    background-color: #8B0000;
+    padding: 1rem;
+    align-items: center;
+    justify-content: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    margin: 10px;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 200;
+    color: #436850;
+}
+
+h1 {
+    font-size: 10vw;
+    position: absolute;
+    top: calc(100vh - 50vw);
+    font-weight: 800;
+    left: 20px;
+    line-height: 1;
+    letter-spacing: -5px;
+    color: #436850;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1;
+    color: #630A10;
+}
+
+button {
+    border: 1px solid #436850;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+    color: #436850;
+  }
+
+  button:hover {
+    border: 1px solid #436850;
+  }
+
+.flex {
+    display: flex;
+}
+
+.flex.row {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex.column {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center
+}
+
+#texto {
+    font-family: "Arial", sans-serif; 
+    font-size: 24px;
+    font-weight: bold; 
+    line-height: 1.5; 
+    color: #630A10;
+}
+
+
+#text-principal {
+    height: 100vh;
+}
+
+#part1 {
+    width: 100%;
+    height: 150vh;
+}
+
+.part1-info {
+  width: 30%;
+  gap: 40px;
+  padding: 1%;
+}
+
+  .scroll {
+    height: 10px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .wine-letter {
+    color: #630A10;
+    display: inline-block;
+    letter-spacing: -2vw;
+    transition: transform 0.2s;
+  }
+
+  .dropdown {
+    width: 25rem;
+    position: relative;
+  }
+
+  .dropdown:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-select {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #739072;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .dropdown-list {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    background-color: #ADBC9F;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+    list-style-type: none;
+  }
+
+  .dropdown-list_item {
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-list_item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
