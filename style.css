@@ -6,7 +6,7 @@ body {
     background-color: rgb(248, 239, 228);
 }
 
-
+    
 h1 {
     font-family: "Imbue", serif;
     font-size: 80px;
@@ -283,8 +283,6 @@ h2 {
 .single-commentDiv p{
     margin: 0;
 }
-
-
 
 
 .comment-list {
