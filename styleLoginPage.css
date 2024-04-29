@@ -12,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: seagreen;
-    background: url('bg_barris.jpg') no-repeat;
+    background: url('wineImages/bg_barris.jpg') no-repeat;
     background-size: cover;
     background-position:center ;
 }
