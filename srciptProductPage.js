@@ -1,4 +1,4 @@
-var productValue = 22.00
+var productValue = document.querySelector('#dynamically-price').innerText
 
 function comprar() {
     alert('Produto adicionado  ao carrinho com sucesso!');
@@ -10,6 +10,8 @@ function comprar() {
 function getValue() {
     var selectElement = document.getElementById('numberSelect').value;
     const multiplicatedPrice = productValue * selectElement;
+    console.log(productValue)
+    console.log(selectElement)
     document.querySelector('#dynamically-price').textContent = multiplicatedPrice;
     applyCupom(applyCupom.disabled = false)
 }
@@ -51,8 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         const commentText = commentInput.value.trim();
         if (commentText !== '') {
-            const newComment = document.createElement('li');
-            newComment.textContent = commentText;
+            const newComment = document.createElement('div');
+            newComment.classList.add('single-commentDiv');
+            const commentTextElement = document.createElement('p')
+            commentTextElement.textContent = commentText;
+            newComment.appendChild(commentTextElement);
             commentList.appendChild(newComment);
             commentInput.value = '';
         }
