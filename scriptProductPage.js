@@ -10,9 +10,7 @@ function comprar() {
 function getValue() {
     var selectElement = document.getElementById('numberSelect').value;
     const multiplicatedPrice = productValue * selectElement;
-    console.log(productValue)
-    console.log(selectElement)
-    document.querySelector('#dynamically-price').textContent = multiplicatedPrice;
+    document.querySelector('#dynamically-price').textContent = multiplicatedPrice.toFixed(2);
     applyCupom(applyCupom.disabled = false)
 }
 
@@ -24,7 +22,7 @@ function applyCupom() {
         if (cupom === 'FIAP2024') {
             var preco = parseInt(document.getElementById('dynamically-price').textContent);
             var preco = preco - (preco / 100 * 10);
-            document.getElementById('dynamically-price').textContent = preco;
+            document.getElementById('dynamically-price').textContent = preco.toFixed(2);
             status.textContent = 'Cupom Aplicado!(10% de desconto)';
             status.style.color = "green";
             applyCupom.disabled = true
