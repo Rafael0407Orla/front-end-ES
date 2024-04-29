@@ -60,8 +60,10 @@ nav ul li a {
     margin: 10px;
     padding: 0;
     color: #fff;
+    font-family: "Arial", sans-serif; 
+    font-weight: bold;
     text-decoration: none;
-}
+  }
 
 main {
     padding: 24px 80px;
@@ -113,7 +115,7 @@ footer {
     padding: 1rem;
     color: #fff;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 12rem;
     clear: both;
 }
 
