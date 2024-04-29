@@ -30,6 +30,15 @@ nav ul li a {
   text-decoration: none;
 }
 
+footer {
+  background-color: #2E3338;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+  clear: both;
+}
+
 p {
     margin: 0;
     font-size: 20px;
