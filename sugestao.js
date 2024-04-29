@@ -24,25 +24,26 @@ document.addEventListener('DOMContentLoaded', function() {
         // Definir texto da receita com base no tipo de vinho selecionado
         switch (textoSelecionado) {
             case 'Vinho Tinto':
-                textoReceita = 'Receita para Vinho Tinto: Bife ao molho de vinho tinto.';
+                textoReceita = ' 「 ✦ Bife à moda da Toscana ✦ 」 <br> <br> 「 ✦ Risoto de cogumelos ✦ 」 <br> <br> 「 ✦ Espaguete à bolonhesa ✦ 」 <br> <br> 「 ✦ Coq au Vin ✦ 」 <br> <br> 「 ✦ Lasanha de carne ✦ 」 ';
                 break;
             case 'Vinho Branco':
-                textoReceita = 'Receita para Vinho Branco: Risoto de camarão ao molho branco.';
+                textoReceita = ' 「 ✦ Salmão assado com ervas ✦ 」 <br> <br>  「 ✦ Risoto de limão com camarão ✦ 」 <br> <br>  「 ✦ Frango ao curry com leite de coco ✦ 」 <br> <br> 「 ✦  Salada de camarão com abacate✦ 」 <br> <br> 「 ✦ Massa com molho de limão e ervilhas ✦ 」 ';
                 break;
             case 'Vinho Seco':
-                textoReceita = 'Receita para Vinho Seco: Tagliatelle ao pesto com frango grelhado.';
+                textoReceita = ' 「 ✦ Tagliatelle ao molho de cogumelos ✦ 」 <br> <br> 「 ✦ Lombo de porco assado com ervas ✦ 」 <br> <br> 「 ✦ Linguine com camarão ao alho e óleo ✦ 」 <br> <br> 「 ✦ Risoto de funghi ✦ 」 <br> <br> 「 ✦ Frango ao vinho ✦ 」 ';
                 break;
             case 'Espumante':
-                textoReceita = 'Receita para Espumante: Canapés de salmão defumado.';
+                textoReceita = ' 「 ✦ Salada de frutas tropicais ✦ 」 <br> <br> 「 ✦ Mini quiches de queijo e presunto ✦ 」 <br> <br> 「 ✦ Camarões ao molho de laranja ✦ 」 <br> <br> 「 ✦ Bruschettas de tomate e manjericão ✦ 」 <br> <br> 「 ✦ Canapés de salmão defumado ✦ 」 ';
                 break;
             case 'Vinho Rosé':
-                textoReceita = 'Receita para Vinho Rosé: Salada de frutas tropicais.';
+                textoReceita = ' 「 ✦ Salada de camarão com manga ✦ 」 <br> <br> 「 ✦ Carpaccio de beterraba ✦ 」 <br> <br> 「 ✦ Ceviche de peixe branco ✦ 」 <br> <br> 「 ✦ Tartelette de tomate e queijo de cabra ✦ 」 <br> <br> 「 ✦ Espetinhos de frutas grelhadas ✦ 」 ';
                 break;
             default:
                 textoReceita = 'Selecione um tipo de vinho para ver a receita.';
         }
   
         // Exibir texto da receita na tela
-        divTexto.textContent = textoReceita;
+        divTexto.innerHTML = textoReceita;
+
     });
 });
