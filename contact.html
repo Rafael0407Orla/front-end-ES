@@ -30,9 +30,8 @@
     <main class = "container">
         <section class = "fomulario">
             <h2>Contact Us</h2>
-            <p>Contact us for more information
-</p>
-            <form action="/submit_contact_form" method="post">
+            <p>Contact us for more information</p>
+            <form>
                 <div class = "input-box">
                     <label for="name"> </label>
                     <input type="text" id="name" name="name" required placeholder="Name">
@@ -43,9 +42,9 @@
                 </div>
                 <div class = "input-box">
                     <label for="message"> </label>
-                    <input type="text" name="message" id="massage" required placeholder="Mensagem"> 
+                    <input type="text" name="message" id="message" required placeholder="Mensagem"> 
                 </div>
-                <button type="submit" class="btn" onclick="ColectInfo()" >Submit</button>
+                <button type="submit" class="btn" onclick="ColectInfo()"; return false" >Submit</button>
             </form>
         </section>
         <section class = "infos">
