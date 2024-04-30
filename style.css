@@ -1,16 +1,19 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
     font-family: "Poppins", sans-serif;
 }
 
-
 body {
+    font-family: "Poppins", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: rgb(248, 239, 228);
 }
 
-    
+
 h1 {
     font-size: 80px;
     margin: 0%;
@@ -38,7 +41,8 @@ nav ul {
     display: flex;
 }
 
-nav ul a:hover{
+nav ul a:hover {
+    font-family: "Poppins", sans-serif;
     text-decoration: underline;
     font-weight: 700;
 }
@@ -68,10 +72,10 @@ nav ul li a {
     margin: 10px;
     padding: 0;
     color: #fff;
-    font-family: "Arial", sans-serif; 
+    font-family: "Arial", sans-serif;
     font-weight: bold;
     text-decoration: none;
-  }
+}
 
 main {
     padding: 24px 80px;
@@ -145,7 +149,8 @@ a {
     box-shadow: 0 8px 15px #afadad;
 }
 
-.cupon-button, button[type="submit"]{
+.cupon-button,
+button[type="submit"] {
     background-color: #ffffff;
     max-width: 200px;
     border-radius: 8px;
@@ -290,7 +295,8 @@ h2 {
     border-radius: 8px;
     padding: 6px 12px;
 }
-.single-commentDiv p{
+
+.single-commentDiv p {
     margin: 0;
 }
 
