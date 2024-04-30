@@ -1,3 +1,4 @@
+z
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +31,12 @@ nav ul li a {
     padding: 0;
     color: #fff;
     text-decoration: none;
+}
+
+nav ul a:hover {
+    font-family: "Poppins", sans-serif;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .container{
