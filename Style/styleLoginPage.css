@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    
+
 }
 
 body {
@@ -17,17 +17,17 @@ body {
     background: seagreen;
     background: url('wineImages/bg_barris.jpg') no-repeat;
     background-size: cover;
-    background-position:center ;
+    background-position: center;
 }
 
 
 
-.container{
+.container {
     width: 420px;
     background-color: transparent;
-    border: 2px solid rgba(255,255,255,.2);
-    backdrop-filter: blur(20px) ;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     color: #ffffff;
     border-radius: 10px;
     padding: 30px 40px;
@@ -41,7 +41,7 @@ nav ul a:hover {
     font-weight: 700;
 }
 
-.container h1{
+.container h1 {
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ nav ul a:hover {
     position: relative;
     height: 50px;
     margin: 30px 0;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .input-box input {
@@ -59,18 +59,22 @@ nav ul a:hover {
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255,255,255,.2);
-    border-radius:40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
     font-size: 16px;
     padding: 20px 45px 20px 20px;
     color: #ffffff;
 }
 
-.input-box input::placeholder {
+
+
+::placeholder {
     color: #ffffff;
+
 }
 
-.input-box i{
+
+.input-box i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -78,7 +82,7 @@ nav ul a:hover {
     font-size: 20px;
 }
 
-.container .remember-forgot{
+.container .remember-forgot {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
@@ -93,55 +97,55 @@ nav ul a:hover {
     margin-right: 3px;
 }
 
-.remember-forgot a{
-    color:#ffffff;
+.remember-forgot a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-.remember-forgot a:hover{
+.remember-forgot a:hover {
     text-decoration: underline;
 
 }
 
 
-.container .btn{
-    width:100%;
+.container .btn {
+    width: 100%;
     height: 45px;
     background: #ffffff;
-    border:none;
+    border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0..1);
+    box-shadow: 0 0 10px rgba(0, 0, 0..1);
     cursor: pointer;
     font-size: 16px;
     color: #333;
     font-weight: 600;
     margin-top: 20px;
-    
+
 }
 
-.btn:hover{
+.btn:hover {
     border: 2px solid var(--main-color);
     transform: translateY(-5px);
-    box-shadow: 0px 5px 5px  rgba(15, 14, 14, 0.409);
+    box-shadow: 0px 5px 5px rgba(15, 14, 14, 0.409);
     font-weight: 700;
-    
+
 }
 
-.container .register-link{
+.container .register-link {
     font-size: 15px;
     text-align: center;
-    margin:20px 0 15px;
+    margin: 20px 0 15px;
 
 
-} 
+}
 
-.register-link p a{
+.register-link p a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.register-link p a:hover{
+.register-link p a:hover {
     text-decoration: underline;
 }
