@@ -1,0 +1,131 @@
+
+.product-page-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    gap: 50px;
+}
+
+.product-page-coloum {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.product-page-image {
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+}
+
+.product-image {
+    width: 150px;
+}
+
+.product-divImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#product-page-coloumInfo {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#statusCupom {
+    font-size: 10px;
+    font-family: JetBrains Mono;
+}
+
+.product-page-coloum__label-cupom {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.prodct-page-reviews-section {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prodct-page-divButtons {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.buy-button {
+    background-color: #8B0000;
+    max-width: 200px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cupon-button, button[type="submit"]{
+    background-color: #ffffff;
+    max-width: 200px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 20px;
+    color: #8B0000;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 8px 15px #afadad;
+}
+
+.buy-button {
+    background-color: #8B0000;
+    max-width: 200px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 8px 15px #afadad;
+}
+
+.product-grid {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.single-commentDiv {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+.single-commentDiv p{
+    margin: 0;
+}
+
+input[type="text"],
+select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border-width: 1px;
+    color: #000;
+    max-width: 500px;
+}
+

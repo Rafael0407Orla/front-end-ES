@@ -1,0 +1,64 @@
+
+.blog-container {
+    width: 920px;
+    margin: 0px auto;
+}
+
+.mainPosts {
+    width: 700px;
+    float: left;
+}
+
+.lateral-bar {
+    width: 200px;
+    float: right;
+}
+
+.titlePost {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 0px;
+    color: #8B0000;
+}
+
+.post {
+    padding: 50px 24px;
+    background-color: #fff;
+    margin-top: -32px;
+    margin-bottom: 10px;
+}
+
+.data-post {
+    font-size: 0.8em;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+.post a {
+    font-weight: bold;
+    color: #8B0000;
+}
+
+
+.conteudo-lateral {
+    width: 180px;
+    background-color: #fff;
+    padding: 1px 10px 10px 10px;
+}
+
+.conteudo-lateral h3 {
+    background-color: #8B0000;
+    color: #fff;
+    padding: 5px
+}
+
+.conteudo-lateral a {
+    font-weight: bold;
+    color: #8B0000;
+}
+
+.postDestaque {
+    background-color: #8B0000;
+}
