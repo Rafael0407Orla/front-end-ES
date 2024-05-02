@@ -18,7 +18,7 @@
     font-size: 2em;
     display: block;
     margin-bottom: 0px;
-    color: #8B0000;
+    color: var(--main-color);
 }
 
 .post {
@@ -38,7 +38,7 @@
 
 .post a {
     font-weight: bold;
-    color: #8B0000;
+    color:var(--main-color);
 }
 
 
@@ -49,16 +49,16 @@
 }
 
 .conteudo-lateral h3 {
-    background-color: #8B0000;
+    background-color: var(--main-color);
     color: #fff;
     padding: 5px
 }
 
 .conteudo-lateral a {
     font-weight: bold;
-    color: #8B0000;
+    color: var(--main-color);
 }
 
 .postDestaque {
-    background-color: #8B0000;
+    background-color: var(--main-color);
 }

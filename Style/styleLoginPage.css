@@ -21,6 +21,7 @@ body {
 }
 
 
+
 .container{
     width: 420px;
     background-color: transparent;
@@ -115,7 +116,16 @@ nav ul a:hover {
     font-size: 16px;
     color: #333;
     font-weight: 600;
-    margin-top: 20px
+    margin-top: 20px;
+    
+}
+
+.btn:hover{
+    border: 2px solid var(--main-color);
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px  rgba(15, 14, 14, 0.409);
+    font-weight: 700;
+    
 }
 
 .container .register-link{
